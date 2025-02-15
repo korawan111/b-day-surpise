@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Minna! 🎂</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #c7ebf2;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            margin-top: 50px;
+        }
+        .hidden-message {
+            display: none;
+            color: #ff4500;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .cake {
+            font-size: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            background-color: #57130e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c7ebf2;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🎉 Happy birthday to Minna! 🎂</h1>
+        <p id="birthday-message">just little bit present from me,hihi 💖</p>
+        <button onclick="showMessage()">click here Minna! 🎁</button>
+        <p id="secret-message" class="hidden-message">✨ happy birthday to Minna!🎉. I hope you happy with things you do and I hope your day is as special and amazing as you are. and have fun with 15!✨🎂🎉</p>
+        <br>
+        <button onclick="scrollToSurprise()">click to watch something 👀</button>
+    </div>
+
+    <div id="surprise" style="margin-top: 1000px;">
+        <h2>🎊 Surprise! 🎊</h2>
+        <p> Du bist lieb!!! I'm so glad to know you my friend. you'er really kind to me. I hope you have a great day!(⁠*⁠＾⁠3⁠＾⁠)⁠/⁠～⁠💖</p>
+        <p class="cake">🍰🎁🎈</p>
+    </div>
+
+   
+
+    <script>
+        function showMessage() {
+            document.getElementById("secret-message").style.display = "block";
+            document.getElementById("birthday-message").innerText = "Hope you have a special day, Minna!";
+            document.getElementById("birthday-song").play(); // autoplay
+        }
+
+        function scrollToSurprise() {
+            document.getElementById("surprise").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>
